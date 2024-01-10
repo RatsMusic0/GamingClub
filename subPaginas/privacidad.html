@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - GamingClub</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="icon" href="../img/logo.jpg" type="image/x-icon">
+</head>
 
+<div id="loader">
+    <img src="../img/carga.gif" alt="Cargando...">
+</div>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Política de Privacidad</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2>Información recopilada</h2>
+        <p>En GamingClub, respetamos tu privacidad. Recopilamos la siguiente información personal cuando decides utilizar nuestros servicios:</p>
+
+        <ul>
+            <li>Nombre y apellidos</li>
+            <li>Dirección de correo electrónico</li>
+            <li>Información de la cuenta de usuario</li>
+            <li>Información de pago (si aplica)</li>
+            <li>Información de contacto (opcional)</li>
+        </ul>
+
+        <p>Esta información es recopilada con el propósito de proporcionar y mejorar nuestros servicios, así como mantener la seguridad de la comunidad GamingClub.</p>
+
+        <h2>Uso de la información</h2>
+        <p>La información recopilada se utiliza para los siguientes fines:</p>
+
+        <ul>
+            <li>Personalizar tu experiencia en GamingClub.</li>
+            <li>Proporcionar y mantener nuestros servicios.</li>
+            <li>Procesar transacciones y pagos (si aplica).</li>
+            <li>Enviar información y actualizaciones relevantes.</li>
+            <li>Mantener la seguridad y prevenir actividades fraudulentas.</li>
+        </ul>
+
+        <h2>Compartir información</h2>
+        <p>No compartiremos tu información personal con terceros sin tu consentimiento, excepto en los siguientes casos:</p>
+
+        <ul>
+            <li>Con proveedores de servicios que nos ayudan a ofrecer nuestros servicios.</li>
+            <li>En respuesta a procesos legales o solicitudes gubernamentales.</li>
+            <li>Para proteger la seguridad y los derechos de GamingClub y sus usuarios.</li>
+        </ul>
+
+        <h2>Cookies y tecnologías similares</h2>
+        <p>Utilizamos cookies y tecnologías similares para mejorar tu experiencia en GamingClub. Puedes ajustar la configuración de las cookies en tu navegador.</p>
+    </section>
+
+    <footer class="container">
+        <p>&copy; 2024 GamingClub. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("loader").style.display = "flex";
+    
+            setTimeout(function () {
+                document.getElementById("loader").style.display = "none";
+            }, 2000);
+    
+            var menuItems = document.querySelectorAll('nav ul li');
+    
+            menuItems.forEach(function (menuItem) {
+                menuItem.addEventListener('mouseenter', function () {
+                    this.querySelector('.sub-menu').style.display = 'block';
+                });
+    
+                menuItem.addEventListener('mouseleave', function () {
+                    this.querySelector('.sub-menu').style.display = 'none';
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
